@@ -43,7 +43,7 @@ function preload() {
 function setup() {
 	//原本1280X690
 	background(0);
-	createCanvas(1340, 770);
+	createCanvas(1280, 700);
   pixelDensity(1);
   frameRate(60);
 	
