@@ -41,9 +41,9 @@ function preload() {
 }
 
 function setup() {
-	//原本1280X690
+	//原本1280X800
 	background(0);
-	createCanvas(1280, 800);
+	createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
   frameRate(60);
 	
@@ -1156,4 +1156,9 @@ function keyPressed() {
   if (key === "s" || key === "S") {
     saveCanvas("digital_blessing_signal_v44", "png");
   }
+	function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  cover = getCoverInfo(currentImg);
+  generateNew();
+}
 }
